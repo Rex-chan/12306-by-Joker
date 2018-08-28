@@ -1,0 +1,54 @@
+html,body{background:#fff;height:100%;}
+.d-login{
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    h1{
+        height: 380px;
+        color:#8666A4;
+        line-height:380px;
+        text-align:center;
+    }
+    .tel,.password{
+        height: 120px;
+        border:0 none;
+        border-bottom:1px solid #000;
+        font-size:30px;
+        color:#8666A4;
+        padding-left: 30px;
+    }
+    input::-webkit-input-placeholder{
+        color:#8666A4;
+    }
+    .error{
+        font-size:30px;
+        color:red;
+        height: 60px;
+        line-height:60px;
+        padding-left: 30px;
+    }
+    .btn{
+        height: 100px;
+        width: 90%;
+        margin:60px auto;
+        font-size:30px;
+        color:#fff;
+        background-color:#8666A4;
+        border-radius:12px;
+        letter-spacing:30px;
+        line-height:100px;
+        text-align:center;
+    }
+    .register{
+        color:#8666A4;
+        font-size:30px;
+        padding-left: 40px;
+        text-decoration:underline;
+    }
+    .btnNo{
+        background:#ccc;
+    }
+    .btnYes{
+        background:#8666a4;
+    }
+}

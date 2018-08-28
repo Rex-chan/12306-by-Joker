@@ -1,0 +1,17 @@
+.mHome{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #F9F9F9;
+    .hBody{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .mainer{
+            overflow-x: hidden;
+            
+        }
+    }
+    
+    
+}

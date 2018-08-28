@@ -1,0 +1,35 @@
+.menus{
+    list-style: none;
+    // display: flex;
+    // justify-content: space-around;
+    height: 90px;
+    padding: 10px 5px 0;
+    border-top: 2px solid #ddd;
+    background-color: #fff;
+    li{
+        float: left;
+        // width:185px;
+        text-align: center;
+        font-size: 24px;
+        i{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto 2px;
+        }
+        
+        a{
+            display: block;
+            width: 185px;
+            color:  #32568f;
+            text-decoration: none ! important; 
+        }
+    }
+    .router-link-active{
+       
+            color:#fc0;
+        
+        
+    }
+}
