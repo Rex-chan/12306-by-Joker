@@ -1,4 +1,7 @@
 .mHome{
+    .list-enter{opacity: 0; transform: translateX(300px);}
+    .list-enter-active{transition: all .5s;}
+    .list-leave-active{transition: all .5s; opacity: 0; transform: translateX(-300px);}
     display: flex;
     flex-direction: column;
     height: 100%;

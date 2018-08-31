@@ -1,15 +1,18 @@
 <template>
     <div class="mHome">
-        <div class="hBody">
-            <hd />
-            <main class="mainer">
-                <div>
-                    <catalog />
-                </div>
-               
-            </main>
-        </div>
-        <menus />
+        <transition name="fade">
+            <div class="hBody">
+                <hd />
+                <main class="mainer">
+                    <div>
+                        <input type="button" :value="count" @click="changeHomeCount" style="width:50px; height:50px; font-size:50px">
+                        <catalog />
+                    </div>
+                    
+                </main>
+            </div>
+        </transition>
+        <menus ref='menu' />
     </div>
 </template>
 
@@ -23,7 +26,7 @@ import './home.scss';
 export default {
     data(){
         return{
-            
+            count: 1,
         }
     },
     components:{
@@ -32,7 +35,10 @@ export default {
         menus,
     },
     methods:{
-        
+        changeHomeCount:function(){
+            this.count += 2;
+            this.$refs.menu.changeMenuCount()
+        }
     },
     mounted(){
         

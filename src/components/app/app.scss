@@ -33,5 +33,26 @@ i{
 *{
     box-sizing:border-box;
 }
+.fade-enter-active{animation: fade-in .5s;}
 
+.fade-leave-active{animation: fade-out .5s;}
+
+@keyframes fade-in{
+    from{
+        width: -100%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes fade-out{
+    from{ width: -100%;}
+    to{ width: 100%;}
+}
+// .fade-enter{transform: translateX(100%);}
+// .fade-enter-active{transition: all .5s;transform: translateX(-100%);}
+// .list-enter{opacity: 0; transform: translateX(300px);}
+// .list-enter-active{transition: all .5s;}
+// .list-leave-active{transition: all .5s; opacity: 0; transform: translateX(-300px);}
 html,body{height: 100%;}
